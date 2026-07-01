@@ -1,0 +1,14 @@
+{
+  "name": "matrix-react-native-dev-plugin",
+  "description": "React Native SDLC workflow for Ono Apps: feature analysis, dev planning, implementation, code review, debugging, QA handoff, and release readiness.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Ono Apps",
+    "email": "magen@onoapps.com"
+  },
+  "hooks": [
+    "./hooks/protect-secrets.json",
+    "./hooks/require-approval-before-code.json",
+    "./hooks/block-main-branch-changes.json"
+  ]
+}

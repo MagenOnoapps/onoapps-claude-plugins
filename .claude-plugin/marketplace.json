@@ -1,0 +1,15 @@
+{
+  "name": "onoapps-claude-plugins",
+  "owner": {
+    "name": "Ono Apps",
+    "email": "magen@onoapps.com"
+  },
+  "description": "Ono Apps internal Claude Code plugin marketplace.",
+  "plugins": [
+    {
+      "name": "matrix-react-native-dev-plugin",
+      "source": "./matrix-react-native-dev-plugin",
+      "description": "React Native SDLC workflow: analyze, plan, implement, review, fix, QA handoff, release."
+    }
+  ]
+}
