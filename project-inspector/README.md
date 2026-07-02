@@ -2,7 +2,7 @@
 
 A Claude Code plugin that turns an existing repository into an AI-ready, audit-tracked project: it generates `CLAUDE.md`, a topic-indexed `AUDIT.md`, a `docs/project/` knowledge base, and detailed per-topic audit files — one approval-gated step at a time, without ever touching source code.
 
-Its output is the context layer consumed by the rest of the OnoApps dev cycle: `dev-design-start` hard-requires `CLAUDE.md` and reads `AUDIT.md` + `docs/`, and the SPAC team uses `docs/project/overview.md` and `components.md` before writing specs.
+Its output is the context layer consumed by the rest of the Ono Apps dev cycle: downstream tooling can require `CLAUDE.md` and read `AUDIT.md` + `docs/`, and product/spec teams can use `docs/project/overview.md` and `components.md` before writing specs.
 
 ## Workflow
 
@@ -25,9 +25,8 @@ Its output is the context layer consumed by the rest of the OnoApps dev cycle: `
                          (Caution Areas + Important Files)
 
 Downstream consumers:
-  spac-writer        → reads docs/project/overview.md + components.md
-  dev-design-start   → requires CLAUDE.md; reads AUDIT.md + docs/
   every Claude Code session → sees approved findings via CLAUDE.md
+  any spec/design workflow  → can read docs/project/overview.md + components.md
 ```
 
 `/inspect-status` at any point prints the topic table, counts, and docs freshness.
@@ -84,9 +83,3 @@ Team distribution: add this repo to the `onoapps-claude-plugins` marketplace, th
 ```
 
 > After installing the plugin, remove the loose copies of `project-analysis` and `audit-breakdown` from `~/.claude/skills/` to avoid double-triggering.
-
-## Follow-ups (outside this plugin)
-
-- `spac-writer` references a missing `references/spac-template.md` — create it or remove the reference.
-- Add one line to `spac-writer` Phase 6: "If `docs/project/components.md` exists in the target repo, read it before scanning source."
-- Align skill-documented SPAC/DD output paths with the real `.claude/spacs/` / `.claude/dds/` convention.

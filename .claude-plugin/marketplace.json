@@ -4,7 +4,7 @@
     "name": "Ono Apps",
     "email": "magen@onoapps.com"
   },
-  "description": "Ono Apps internal Claude Code plugin marketplace.",
+  "description": "Ono Apps Claude Code plugin marketplace.",
   "plugins": [
     {
       "name": "matrix-react-native-dev-plugin",
@@ -14,7 +14,7 @@
     {
       "name": "project-inspector",
       "source": "./project-inspector",
-      "description": "Repo analysis → CLAUDE.md, AUDIT.md, docs/ knowledge base, and one-topic-at-a-time audit breakdowns. Produces the project context consumed by spac-writer and dev-design-start."
+      "description": "Repo analysis → CLAUDE.md, AUDIT.md, docs/ knowledge base, and one-topic-at-a-time audit breakdowns."
     }
   ]
 }

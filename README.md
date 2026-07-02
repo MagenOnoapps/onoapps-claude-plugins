@@ -1,6 +1,6 @@
 # Ono Apps Claude Marketplace
 
-Internal Claude Code plugin marketplace for Ono Apps.
+Claude Code plugin marketplace maintained by Ono Apps.
 
 ## Install
 
@@ -12,3 +12,8 @@ Internal Claude Code plugin marketplace for Ono Apps.
 ## Plugins
 
 - [`matrix-react-native-dev-plugin`](./matrix-react-native-dev-plugin/README.md) — React Native SDLC workflow: analyze, plan, implement, review, fix, QA handoff, release.
+- [`project-inspector`](./project-inspector/README.md) — Repo analysis into CLAUDE.md, AUDIT.md, a docs/ knowledge base, and one-topic-at-a-time audit breakdowns.
+
+## License
+
+[MIT](./LICENSE)
